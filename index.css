@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Amsterdam-style font (serif elegant) */
+@font-face {
+  font-family: 'Amsterdam';
+  src: local('Georgia'), local('Times New Roman');
+  font-display: swap;
+}
+
+/* Star-style font (bold impactful) */
+@font-face {
+  font-family: 'Star';
+  src: local('Arial Black'), local('Helvetica Bold');
+  font-display: swap;
+}
+
+/* Animation utilities */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoom-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 10px;
+}
